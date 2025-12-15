@@ -37,7 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Example Shema 
 
-Accordian than ca can be repetead 25 times
+Accordian that can be repetead 25 times
 ```ts
 import { defineField, defineType } from "sanity";
 
