@@ -38,7 +38,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## Example Shema 
 
 Accordian than ca can be repetead 25 times
-
+```ts
 import { defineField, defineType } from "sanity";
 
 export const accordionType = defineType({
@@ -75,7 +75,7 @@ export const accordionType = defineType({
     }),
   ],
 });
-
+```
 In Sanity Studio, when you view a list of objects (or a field in a table), by default it only displays the schema title or "object" → not very informative.
 
 ⚡The preview allows you to control what is displayed visually:
@@ -95,19 +95,19 @@ select → choose the fields you want to retrieve.
 prepare → format the display (optional but very useful).
 
 Simple example:
-
+```ts
 preview: {
   select: {
     title: "title",      // get the "title"
     subtitle: "content", // get the "content"
   },
 }
-
+```
 ⚡With prepare
 
 Sometimes you want to add logic: default text, a different icon, etc.
 That's where prepare comes in.
-
+```ts
 preview: {
   select: {
     title: "title",
@@ -121,11 +121,11 @@ preview: {
     }
   },
 }
-
+```
 ⚡complete example
 
 npm install react-icons
-
+```ts
 import { defineField, defineType } from "sanity";
 import { FaListUl, FaHeading, FaAlignLeft } from "react-icons/fa";
 
@@ -190,3 +190,4 @@ export const accordionType = defineType({
     },
   },
 });
+```
